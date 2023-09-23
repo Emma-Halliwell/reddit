@@ -1,0 +1,12 @@
+.card {
+    background: var(--color-foreground);
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing-4);
+    border-radius: var(--radius-0);
+    padding: var(--spacing-3);
+    color: var(--color-text-body-secondary);
+}
+
+.card:hover {
+    box-shadow: var(--box-shadow-hover);
+}

@@ -1,0 +1,28 @@
+.votes {
+    display: inline-flex;
+    width: 5%;
+}
+
+p {
+    color: var(--color-votes);
+    font-weight: 700;
+    font-size: var(--font-size-1);
+}
+
+.titles {
+    display: inline-flex;
+}
+
+a {
+    color: var(--color-branding);
+    font-size: var(--font-size-1);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--color-background-secondary);
+}
+
+a:visited {
+    color: var(--color-text-body);
+}

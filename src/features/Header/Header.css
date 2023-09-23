@@ -1,0 +1,25 @@
+.logo {
+    display: inline-flex;
+    border-bottom: 1px solid var(--color-border);
+    width:  59%;
+    background: var(--color-background-header);
+    padding: 0 0 0 41%;
+    margin-bottom: 5px;
+}
+
+.logo-icon {
+    font-size: var(--font-size-6);
+    margin-top: 6px;
+    margin-right: 0.4rem;
+}
+
+.title {
+    color: var(--color-text-header);
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
+
+.title-secondary {
+    color: var(--color-text-header-secondary);
+    font-weight: 400;
+}
