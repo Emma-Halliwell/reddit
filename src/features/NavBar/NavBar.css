@@ -1,0 +1,19 @@
+.subreddits {
+    display: inline-flex;
+    padding: 0 0.3rem;
+    background: var(--color-background-header);
+    margin-left: 5px;
+}
+
+.subreddits p {
+    color: var(--color-text-body);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media only screen and (max-width: 425px) {
+    .subreddits {
+      display: none;
+    }
+}

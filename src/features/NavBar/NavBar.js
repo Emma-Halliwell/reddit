@@ -3,8 +3,8 @@ import './NavBar.css';
 
 const NavBar = (props) => {
     return (
-        <div>
-            <p>{props.nav.display_name_prefixed}</p>
+        <div className="subreddits">
+            <p>{props.nav.title}</p>
         </div>
     )
 };

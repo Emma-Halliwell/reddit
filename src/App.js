@@ -9,7 +9,7 @@ function App() {
   const [subreddit, setSubreddit] = useState('AmItheAsshole');
 
   useEffect(() => {
-    fetch("https://www.reddit.com/r/"+ subreddit +".json?limit=5").then(res => {
+    fetch("https://www.reddit.com/r/"+ subreddit +".json?limit=11").then(res => {
       if (res.status !== 200) {
         console.log("ERROR");
         return;
@@ -27,7 +27,7 @@ function App() {
   const [subreddits] = useState(null);
 
   useEffect(() => {
-    fetch('https://www.reddit.com/subreddits.json?limit=8').then(res => {
+    fetch('https://www.reddit.com/subreddits.json?limit=12').then(res => {
       if (res.status !== 200) {
         console.log('ERROR');
         return
@@ -57,7 +57,7 @@ function App() {
         </div>
       <div className="articles">
         {
-          (articles !== null) ? articles.map((article, index) => <Article key={index} article={article.data} />) : 'Failed to laod article titles'
+          (articles !== null) ? articles.map((article, index) => <Article key={index} article={article.data} />) : 'Failed to load article titles'
         }
       </div>
     </div>

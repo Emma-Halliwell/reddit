@@ -3,9 +3,9 @@
     width: 5%;
 }
 
-p {
+.votes p {
     color: var(--color-votes);
-    font-weight: 700;
+    font-weight: 600;
     font-size: var(--font-size-1);
 }
 
@@ -15,14 +15,22 @@ p {
 
 a {
     color: var(--color-branding);
-    font-size: var(--font-size-1);
+    font-size: var(--font-size-0);
     text-decoration: none;
+    padding: 0 0.4rem;
 }
 
 a:hover {
     background-color: var(--color-background-secondary);
+    border-radius: var(--radius-1);
 }
 
 a:visited {
     color: var(--color-text-body);
+}
+
+@media only screen and (max-width: 425px) {
+    .votes {
+      display: none;
+    }
 }

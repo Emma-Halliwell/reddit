@@ -1,5 +1,5 @@
 .card {
-    background: var(--color-foreground);
+    background: var(--color-background-header);
     box-shadow: var(--box-shadow);
     margin-bottom: var(--spacing-4);
     border-radius: var(--radius-0);
@@ -9,4 +9,10 @@
 
 .card:hover {
     box-shadow: var(--box-shadow-hover);
+}
+
+@media only screen and (max-width: 425px) {
+    .card {
+        margin-bottom: var(--spacing-2);
+    }
 }
